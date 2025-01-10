@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Quiz Submission Form</title>
+  </head>
+  <body>
+    <h1>Online Quiz Submission Form</h1>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label>Time Remaining:</label><br />
+      <input
+        type="text"
+        id="timer"
+        name="timer"
+        value="10:00"
+        readonly
+      /><br /><br />
+
+      <label>1. What is the capital of France?</label><br />
+      <input type="radio" id="q1-option1" name="q1" value="paris" required />
+      <label for="q1-option1">Paris</label><br />
+      <input type="radio" id="q1-option2" name="q1" value="london" />
+      <label for="q1-option2">London</label><br />
+      <input type="radio" id="q1-option3" name="q1" value="berlin" />
+      <label for="q1-option3">Berlin</label><br /><br />
+
+      <label>2. Which planet is known as the Red Planet?</label><br />
+      <input type="radio" id="q2-option1" name="q2" value="mars" required />
+      <label for="q2-option1">Mars</label><br />
+      <input type="radio" id="q2-option2" name="q2" value="venus" />
+      <label for="q2-option2">Venus</label><br />
+      <input type="radio" id="q2-option3" name="q2" value="jupiter" />
+      <label for="q2-option3">Jupiter</label><br /><br />
+
+      <label>3. What is 2 + 2?</label><br />
+      <input type="radio" id="q3-option1" name="q3" value="4" required />
+      <label for="q3-option1">4</label><br />
+      <input type="radio" id="q3-option2" name="q3" value="5" />
+      <label for="q3-option2">5</label><br />
+      <input type="radio" id="q3-option3" name="q3" value="6" />
+      <label for="q3-option3">6</label><br /><br />
+
+      <input type="submit" value="Submit Quiz" />
+    </form>
+  </body>
+</html>
