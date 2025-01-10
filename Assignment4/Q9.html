@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Form</title>
+  </head>
+  <body>
+    <h1>Hotel Booking Form</h1>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="contactInfo">Contact Info:</label><br />
+      <input
+        type="text"
+        id="contactInfo"
+        name="contactInfo"
+        required
+      /><br /><br />
+
+      <label for="checkInDate">Check-in Date:</label><br />
+      <input
+        type="date"
+        id="checkInDate"
+        name="checkInDate"
+        required
+      /><br /><br />
+
+      <label for="checkOutDate">Check-out Date:</label><br />
+      <input
+        type="date"
+        id="checkOutDate"
+        name="checkOutDate"
+        required
+      /><br /><br />
+
+      <label for="numGuests">Number of Guests:</label><br />
+      <input
+        type="number"
+        id="numGuests"
+        name="numGuests"
+        min="1"
+        required
+      /><br /><br />
+
+      <label for="roomType">Room Type:</label><br />
+      <select id="roomType" name="roomType" required>
+        <option value="">Select a room type</option>
+        <option value="single">Single ($100 per night)</option>
+        <option value="double">Double ($150 per night)</option>
+        <option value="suite">Suite ($250 per night)</option></select
+      ><br /><br />
+
+      <label>Additional Services:</label><br />
+      <input
+        type="checkbox"
+        id="breakfast"
+        name="breakfast"
+        value="breakfast"
+      />
+      <label for="breakfast">Breakfast ($10 per guest per day)</label><br />
+      <input
+        type="checkbox"
+        id="airportPickup"
+        name="airportPickup"
+        value="airportPickup"
+      />
+      <label for="airportPickup">Airport Pickup ($20 per trip)</label
+      ><br /><br />
+
+      <label for="totalCost">Total Cost:</label><br />
+      <input type="text" id="totalCost" name="totalCost" readonly /><br /><br />
+
+      <input type="submit" value="Book Now" />
+    </form>
+  </body>
+</html>
